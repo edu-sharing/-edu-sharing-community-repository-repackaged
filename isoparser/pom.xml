@@ -108,6 +108,9 @@
               <goal>single</goal>
             </goals>
             <phase>package</phase>
+            <configuration>
+              <skipAssembly>${license.skipAddThirdParty}</skipAssembly>
+            </configuration>
           </execution>
         </executions>
       </plugin>
