@@ -140,7 +140,24 @@
             </goals>
             <phase>generate-resources</phase>
             <configuration>
-              <includedGroups>^(org.apache.httpcomponents|org.apache.lucene|org.elasticsearch)\.*</includedGroups>
+              <thirdPartyFilename>THIRD-PARTY-${project.artifactId}.txt</thirdPartyFilename>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>assembly</id>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <phase>package</phase>
+            <configuration>
+              <skipAssembly>${license.skipAddThirdParty}</skipAssembly>
             </configuration>
           </execution>
         </executions>
