@@ -42,6 +42,7 @@
     <module>elasticsearch</module>
     <module>isoparser</module>
     <module>spring-web</module>
+    <module>spring-security-web</module>
   </modules>
 
   <build>
