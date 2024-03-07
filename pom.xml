@@ -39,7 +39,6 @@
   </profiles>
 
   <modules>
-    <module>elasticsearch</module>
     <module>isoparser</module>
   </modules>
 
